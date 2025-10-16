@@ -11,15 +11,12 @@ function Ajustes() {
       <div className="ajustes-section">
         <h3>Apariencia</h3>
         <div className="setting-item">
-          <label htmlFor="theme-toggle">
-            <span>Tema oscuro</span>
-            <input
-              type="checkbox"
-              id="theme-toggle"
-              checked={dark}
-              onChange={(e) => setDark(e.target.checked)}
-            />
-          </label>
+          <button
+            className="btn-primary"
+            onClick={() => setDark(!dark)}
+          >
+            {dark ? "Cambiar a Tema Claro" : "Cambiar a Tema Oscuro"}
+          </button>
         </div>
       </div>
     </div>
