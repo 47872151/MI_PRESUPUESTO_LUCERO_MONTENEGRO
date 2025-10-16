@@ -207,6 +207,25 @@ background-color: #1A1423;
   background-color: #c0392b;
 }
 
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+}
+
 .card button {
   background-color: #e74c3c;
   color: white;
@@ -214,7 +233,6 @@ background-color: #1A1423;
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 .card button:hover {

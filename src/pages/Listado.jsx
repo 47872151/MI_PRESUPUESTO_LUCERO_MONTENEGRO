@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useMovimientosContext } from "../contexts/MovimientosContext";
+import Editar from "./Editar";
 
 function Listado() {
+  const navigate = useNavigate();
   const { movimientos, deleteMovimiento } = useMovimientosContext();
 
   return (
@@ -27,7 +30,10 @@ function Listado() {
               <p>
                 <strong>Fecha:</strong> {mov.fecha}
               </p>
-              <button onClick={() => deleteMovimiento(mov.id)}>Eliminar</button>
+              <div className="card-buttons">
+                <button className="btn-edit" onClick={() => navigate(`/editar/${mov.id}`)}>Editar</button>
+                <button onClick={() => deleteMovimiento(mov.id)}>Eliminar</button>
+              </div>
             </div>
           ))}
         </div>
