@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import { useState, useEffect } from 'react'
 
 const STORAGE_KEY = 'movimientos'
@@ -54,8 +47,6 @@ export function useMovimientos() {
   const deleteMovimiento = (id) =>
     setMovimientos(movimientos.filter(m => m.id !== id))
   const resetMovimientos = () => setMovimientos([])
-
-  // Filtros y ordenamientos pueden agregarse aquí
 
   return {
     movimientos,

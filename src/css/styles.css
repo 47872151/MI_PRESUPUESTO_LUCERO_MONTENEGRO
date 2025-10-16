@@ -114,3 +114,287 @@ background-color: #1A1423;
   margin: 10px 0;
   color: #555;
 }
+
+/* Estilos para formularios */
+.nuevo-movimiento,
+.ajustes,
+.resumen {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #3D314A;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3D314A;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #3D314A;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1A1423;
+}
+
+.btn-secondary {
+  background-color: #ddd;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #bbb;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.card button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #c0392b;
+}
+
+/* Estilos para Resumen */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card.ingreso {
+  background-color: #d5f4e6;
+  border-left: 5px solid #27ae60;
+}
+
+.stat-card.gasto {
+  background-color: #fadbd8;
+  border-left: 5px solid #e74c3c;
+}
+
+.stat-card.balance.positivo {
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+}
+
+.stat-card.balance.negativo {
+  background-color: #f8d7da;
+  border-left: 5px solid #dc3545;
+}
+
+.stat-card h3 {
+  margin: 0 0 10px 0;
+  color: #3D314A;
+  font-size: 1.2em;
+}
+
+.stat-card .amount {
+  font-size: 2em;
+  font-weight: bold;
+  color: #1A1423;
+  margin: 0;
+}
+
+.categorias-section,
+.movimientos-recientes {
+  margin-top: 30px;
+}
+
+.categorias-section h3,
+.movimientos-recientes h3 {
+  color: #3D314A;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.categorias-list,
+.movimientos-list {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias-list li,
+.movimientos-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.categorias-list li:hover,
+.movimientos-list li:hover {
+  background-color: #f9f9f9;
+}
+
+.categoria-name {
+  text-transform: capitalize;
+}
+
+.categoria-monto,
+.monto {
+  font-weight: bold;
+}
+
+.movimientos-list li.gasto .monto {
+  color: #e74c3c;
+}
+
+.movimientos-list li.ingreso .monto {
+  color: #27ae60;
+}
+
+/* Estilos para Ajustes */
+.ajustes-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.ajustes-section:last-child {
+  border-bottom: none;
+}
+
+.ajustes-section h3 {
+  color: #3D314A;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.setting-item {
+  margin-bottom: 20px;
+}
+
+.setting-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.setting-item input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.help-text {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 5px;
+}
+
+.info-item p {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Tema oscuro */
+body.dark {
+  background-color: #1A1423;
+  color: #ffffff;
+}
+
+body.dark .card,
+body.dark .nuevo-movimiento,
+body.dark .ajustes,
+body.dark .resumen {
+  background-color: #3D314A;
+  color: #ffffff;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #ffffff;
+}
+
+body.dark .form-group label {
+  color: #ffffff;
+}
+
+body.dark .form-group input,
+body.dark .form-group select {
+  background-color: #1A1423;
+  color: #ffffff;
+  border-color: #555;
+}
+
+body.dark .stat-card h3,
+body.dark .card h3 {
+  color: #ffffff;
+}
+
+body.dark .categorias-list li,
+body.dark .movimientos-list li {
+  border-bottom-color: #555;
+}
+
+body.dark .categorias-list li:hover,
+body.dark .movimientos-list li:hover {
+  background-color: #1A1423;
+}
