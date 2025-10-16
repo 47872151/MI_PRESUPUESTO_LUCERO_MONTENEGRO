@@ -6,14 +6,16 @@ import './css/styles.css'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import { MovimientosProvider } from './contexts/MovimientosContext.jsx'
-import { ThemeProvider } from './context/ThemeContext.jsx'
+import { ThemeProvider } from './contexts/ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
+  <BrowserRouter> 
   <StrictMode>
     <ThemeProvider>
       <MovimientosProvider>
         <App />
       </MovimientosProvider>
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
+  </BrowserRouter>,
 )
